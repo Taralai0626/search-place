@@ -7,10 +7,10 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-    <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAq_BgjdIrt6XMzDT5J7RPmMovum-hne1E&libraries=places&callback=initMap">
+    <script async src="https://maps.googleapis.com/maps/api/js?key=<%=process.env.VUE_APP_GOOGLE_KEY%>&libraries=places&callback=initMap">
     </script>
+
+
   </head>
   <body>
     <noscript>
